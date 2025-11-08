@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Analytics\Entities\" />
+      <Folder Include="Analytics\Interfaces\" />
+      <Folder Include="Goals\Interfaces\" />
+      <Folder Include="Services\" />
+      <Folder Include="UserTotal\Interfaces\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ViteLoq.SharedKernel\ViteLoq.SharedKernel.csproj" />
+    </ItemGroup>
+
+</Project>

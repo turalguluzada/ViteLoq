@@ -1,0 +1,17 @@
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.Application.deps.json
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.Application.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.Application.pdb
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.Domain.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.Domain.pdb
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.csproj.AssemblyReference.cache
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.AssemblyInfoInputs.cache
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.AssemblyInfo.cs
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.csproj.CoreCompileInputs.cache
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq..61F3B3B2.Up2Date
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/refint/ViteLoq.Application.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.pdb
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ref/ViteLoq.Application.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.SharedKernel.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.SharedKernel.pdb
