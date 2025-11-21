@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ViteLoq.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c14686c88e97db9047626d9c8e0cd3ae06603718")]
 [assembly: System.Reflection.AssemblyProductAttribute("ViteLoq.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ViteLoq.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

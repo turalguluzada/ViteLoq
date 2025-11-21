@@ -1,0 +1,12 @@
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/bin/Debug/net8.0/Restaurant.Domain.deps.json
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/bin/Debug/net8.0/Restaurant.Domain.dll
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/bin/Debug/net8.0/Restaurant.Domain.pdb
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/Restaurant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/Restaurant.Domain.AssemblyInfoInputs.cache
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/Restaurant.Domain.AssemblyInfo.cs
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/Restaurant.Domain.csproj.CoreCompileInputs.cache
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/Restaurant.Domain.dll
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/refint/Restaurant.Domain.dll
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/Restaurant.Domain.pdb
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/ref/Restaurant.Domain.dll
+/Users/guluz4deh/Documents/Restaurant/Restaurant.Domain/obj/Debug/net8.0/Restaurant.Domain.sourcelink.json

@@ -153,6 +153,48 @@ namespace ViteLoq.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("ViteLoq.Domain.Auth.Entities.RefreshToken", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedByIp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReplacedByTokenHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Revoked")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("RevokedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TokenHash")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ExpiresAt");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("RefreshTokens", (string)null);
+                });
+
             modelBuilder.Entity("ViteLoq.Domain.Entities.AppUser", b =>
                 {
                     b.Property<Guid>("Id")
@@ -164,6 +206,13 @@ namespace ViteLoq.Infrastructure.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset>("CreatedDate")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("DisplayName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -209,6 +258,9 @@ namespace ViteLoq.Infrastructure.Migrations
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset>("UpdatedDate")
+                        .HasColumnType("datetimeoffset");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
@@ -492,7 +544,8 @@ namespace ViteLoq.Infrastructure.Migrations
 
                     b.Property<string>("Brand")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("CaffeineMg")
                         .HasColumnType("decimal(18,2)");
@@ -625,7 +678,8 @@ namespace ViteLoq.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("NetCarbs")
                         .HasColumnType("decimal(18,2)");
@@ -737,7 +791,7 @@ namespace ViteLoq.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("NutritionItems");
+                    b.ToTable("NutritionItems", (string)null);
                 });
 
             modelBuilder.Entity("ViteLoq.Domain.Templates.Entities.WorkoutTemplate", b =>
@@ -754,7 +808,7 @@ namespace ViteLoq.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("WorkoutTemplates");
+                    b.ToTable("WorkoutTemplate", (string)null);
                 });
 
             modelBuilder.Entity("ViteLoq.Domain.UserEntry.Entities.UserNutritionEntry", b =>
@@ -785,7 +839,7 @@ namespace ViteLoq.Infrastructure.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("UserNutritionEntries");
+                    b.ToTable("UserFoodEntries", (string)null);
                 });
 
             modelBuilder.Entity("ViteLoq.Domain.UserEntry.Entities.UserWorkoutEntry", b =>

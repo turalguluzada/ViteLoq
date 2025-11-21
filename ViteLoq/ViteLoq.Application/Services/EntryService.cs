@@ -32,7 +32,7 @@ namespace ViteLoq.Application.Services
         //         }
         //     }
         //
-        //     var entry = new UserFoodEntry
+        //     var entry = new UserEntry
         //     {
         //         Id = Guid.NewGuid(),
         //         UserId = dto.UserId,
@@ -54,7 +54,7 @@ namespace ViteLoq.Application.Services
         //     return entry.Id;
         // }
         //
-        // public Task<IEnumerable<UserFoodEntry>> GetFoodEntriesForUserAsync(Guid userId, DateTime from, DateTime to, CancellationToken ct = default)
+        // public Task<IEnumerable<UserEntry>> GetFoodEntriesForUserAsync(Guid userId, DateTime from, DateTime to, CancellationToken ct = default)
         // {
         //     return _entryRepo.GetFoodEntriesForUserAsync(userId, from, to, ct);
         // }

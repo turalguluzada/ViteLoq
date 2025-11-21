@@ -149,3 +149,10 @@
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/ViteLoq.Application.pdb
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/ViteLoq.SharedKernel.dll
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/ViteLoq.SharedKernel.pdb
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/AutoMapper.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/obj/Debug/net8.0/ViteLoq.Api.sourcelink.json
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/FluentValidation.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Api/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

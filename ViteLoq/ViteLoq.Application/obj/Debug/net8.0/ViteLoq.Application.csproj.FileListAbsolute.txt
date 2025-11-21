@@ -15,3 +15,4 @@
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ref/ViteLoq.Application.dll
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.SharedKernel.dll
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/bin/Debug/net8.0/ViteLoq.SharedKernel.pdb
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Application/obj/Debug/net8.0/ViteLoq.Application.sourcelink.json

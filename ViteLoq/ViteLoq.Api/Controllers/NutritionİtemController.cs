@@ -23,7 +23,7 @@ public class NutritionİtemController : Controller
         if(!ModelState.IsValid)
             return BadRequest(ModelState);
         
-        if(nutritionItemDto == null)
+        if(nutritionItemDto == null) 
             return StatusCode(404, new { errorCode = 1043, message = "NutritionItemDto is null" });
         
         var id = await _nutritionItemService.CreateAsync(nutritionItemDto);

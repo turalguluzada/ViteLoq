@@ -10,4 +10,6 @@ public class UserDetail : BaseEntity
     public string Gender { get; set; }       // "Male","Female","Other" - enum tercihi olabilir
     public decimal HeightCm { get; set; }   // decimal(6,2)
     public decimal WeightKg { get; set; }   // decimal(6,2)
+    public DateTimeOffset CreatedDate { get; set; }
+    public DateTimeOffset UpdatedDate { get; set; }
 }

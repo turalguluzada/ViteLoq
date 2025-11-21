@@ -18,12 +18,12 @@ public class CreateUserDto
     [StringLength(100)]
     public string? UserName { get; set; }
 
-    // [Required, StringLength(100)]
-    // public string DisplayName { get; set; } = null!;
-    //
-    // // optional initial roles (e.g. "User")
-    // public IEnumerable<string>? Roles { get; set; }  
-    //
-    // // optional initial profile fields (can be null)
-    // public UserDetailDto? InitialProfile { get; set; }
+    [Required, StringLength(100)]
+    public string DisplayName { get; set; } = null!;
+    
+    // optional initial roles (e.g. "User")
+    public IEnumerable<string>? Roles { get; set; }  
+    
+    // optional initial profile fields (can be null)
+    public UserDetailDto? InitialProfile { get; set; }
 }

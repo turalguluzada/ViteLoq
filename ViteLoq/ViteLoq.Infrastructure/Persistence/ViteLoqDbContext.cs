@@ -44,6 +44,7 @@ namespace ViteLoq.Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ViteLoqDbContext).Assembly);
             base.OnModelCreating(modelBuilder);
             // sənin mapping'lər...
         }

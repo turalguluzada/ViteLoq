@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ch6BRk/UrhY=",
+  "success": true,
+  "projectFilePath": "/Users/guluz4deh/Documents/Restaurant/Restaurant.Infrastructure/Restaurant.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/Users/guluz4deh/.nuget/packages/system.io.pipelines/10.0.0/system.io.pipelines.10.0.0.nupkg.sha512",
+    "/Users/guluz4deh/.nuget/packages/system.text.encodings.web/10.0.0/system.text.encodings.web.10.0.0.nupkg.sha512",
+    "/Users/guluz4deh/.nuget/packages/system.text.json/10.0.0/system.text.json.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

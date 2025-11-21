@@ -9,8 +9,10 @@ public class AppUser : IdentityUser<Guid>
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
-        
-        
+    public string DisplayName { get; set; }
+    public DateTimeOffset CreatedDate { get; set; }
+    public DateTimeOffset UpdatedDate { get; set; }
+    
     // public UserProfile UserProfile { get; set; }
     // public UserTargets UserTargets { get; set; }
     // public UserDailyProgress UserDailyProgress { get; set; }

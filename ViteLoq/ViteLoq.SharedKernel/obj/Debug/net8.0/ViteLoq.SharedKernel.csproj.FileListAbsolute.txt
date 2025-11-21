@@ -9,3 +9,4 @@
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.SharedKernel/obj/Debug/net8.0/refint/ViteLoq.SharedKernel.dll
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.SharedKernel/obj/Debug/net8.0/ViteLoq.SharedKernel.pdb
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.SharedKernel/obj/Debug/net8.0/ref/ViteLoq.SharedKernel.dll
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.SharedKernel/obj/Debug/net8.0/ViteLoq.SharedKernel.sourcelink.json

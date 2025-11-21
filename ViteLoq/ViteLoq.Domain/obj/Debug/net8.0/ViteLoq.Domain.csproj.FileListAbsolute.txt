@@ -13,3 +13,4 @@
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Domain/bin/Debug/net8.0/ViteLoq.SharedKernel.dll
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Domain/bin/Debug/net8.0/ViteLoq.SharedKernel.pdb
 /Users/guluz4deh/Documents/ViteLoq/ViteLoq.Domain/obj/Debug/net8.0/ViteLoq..3D36BA66.Up2Date
+/Users/guluz4deh/Documents/ViteLoq/ViteLoq.Domain/obj/Debug/net8.0/ViteLoq.Domain.sourcelink.json

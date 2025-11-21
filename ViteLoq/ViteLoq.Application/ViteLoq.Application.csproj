@@ -10,4 +10,16 @@
       <ProjectReference Include="..\ViteLoq.Domain\ViteLoq.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.35.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Validators\Templates\" />
+      <Folder Include="Validators\UserEntry\" />
+    </ItemGroup>
+
 </Project>
