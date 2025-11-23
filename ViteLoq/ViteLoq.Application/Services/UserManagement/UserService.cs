@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using AutoMapper;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using ViteLoq.Application.DTOs.UserManagement;
 using ViteLoq.Application.Interfaces.UserManagement;
@@ -95,18 +96,43 @@ public class UserService : IUserService
         var user = await _userRepository.GetByIdAsync(userId, ct).ConfigureAwait(false);
         if (user == null) return null;
 
-        var detailTask = _userRepository.GetUserDetailAsync(userId, ct);
-        var rolesTask = _userRepository.GetRolesAsync(user, ct);
-        var claimsTask = _userRepository.GetClaimsAsync(user, ct);
+        // var detailTask = _userRepository.GetUserDetailAsync(userId, ct);
+        // var rolesTask = _userRepository.GetRolesAsync(user, ct);
+        // var claimsTask = _userRepository.GetClaimsAsync(user, ct);
+        //
+        // await Task.WhenAll(detailTask, rolesTask, claimsTask).ConfigureAwait(false);
+        
+        var detailTask = await _userRepository.GetUserDetailAsync(userId, ct);
+        var rolesTask = await _userRepository.GetRolesAsync(user, ct);
+        var claimsTask = await _userRepository.GetClaimsAsync(user, ct);
 
-        await Task.WhenAll(detailTask, rolesTask, claimsTask).ConfigureAwait(false);
-
-        var profile = _mapper.Map<UserProfileDto>(user);
-        var detail = detailTask.Result;
+        UserProfileDto profile = null;
+        try
+        {
+            profile = _mapper.Map<UserProfileDto>(user);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("MAPPER ERROR: " + ex.Message);
+            throw; // vacibdir, yoxsa debugger sətri “keçir”
+        }
+        
+        // var profile = new UserProfileDto();
+        // profile.UserId = user.Id;
+        // profile.UserName = user.UserName;
+        // profile.Email = user.Email;
+        // profile.FirstName = user.FirstName;
+        // profile.LastName = user.LastName;
+        // profile.PhoneNumber = user.PhoneNumber;
+        // profile.EmailConfirmed = user.EmailConfirmed;
+        // profile.DisplayName = user.DisplayName;
+        
+        // var detail = detailTask.Result;
+        var detail = detailTask;
         if (detail != null) profile.Detail = _mapper.Map<UserDetailDto>(detail);
         // profile.Roles = rolesTask.Result ?? Array.Empty<string>();
-        profile.Claims = (claimsTask.Result ?? Enumerable.Empty<Claim>()).Select(c => new UserClaimDto { Type = c.Type, Value = c.Value }).ToArray();
-
+        // profile.Claims = (claimsTask.Result ?? Enumerable.Empty<Claim>()).Select(c => new UserClaimDto { Type = c.Type, Value = c.Value }).ToArray();
+        profile.Claims = (claimsTask ?? Enumerable.Empty<Claim>()).Select(c => new UserClaimDto { Type = c.Type, Value = c.Value }).ToArray();
         return profile;
     }
 

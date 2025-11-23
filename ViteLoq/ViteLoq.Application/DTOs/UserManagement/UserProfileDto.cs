@@ -4,7 +4,7 @@ namespace ViteLoq.Application.DTOs.UserManagement;
 
 public class UserProfileDto
 {
-    public Guid UserId { get; set; }
+    public Guid Id { get; set; }
 
     public string Email { get; set; } = string.Empty;
     public string? UserName { get; set; }
@@ -18,7 +18,7 @@ public class UserProfileDto
     public string[] Roles { get; set; } = Array.Empty<string>();
     public UserClaimDto[] Claims { get; set; } = Array.Empty<UserClaimDto>();
 
-    public DateTime CreatedDate { get; set; }
+    public DateTimeOffset CreatedDate { get; set; }
     public DateTime? LastSeenAt { get; set; } // optional if you track presence
     
     

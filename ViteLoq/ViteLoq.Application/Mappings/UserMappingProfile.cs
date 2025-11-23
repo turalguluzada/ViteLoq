@@ -27,6 +27,11 @@ public class UserMappingProfile : Profile
         CreateMap<UserDetail, UserDetailDto>();
         CreateMap<AppUser, AppUserDto>();
         CreateMap<AppUser, UserProfileDto>();
+        // Entity -> DTO (profile)
+        // CreateMap<AppUser, UserProfileDto>()
+        //     .ForMember(d => d.UserId, o => o.MapFrom(s => s.Id))
+        //     .ForMember(d => d.UserName, o => o.MapFrom(s => s.UserName))
+        //     .ForMember(d => d.Email, o => o.MapFrom(s => s.Email));
         // .ForMember(d => d.Detail, opt => opt.Ignore()); // fill detail separately
     }
 }

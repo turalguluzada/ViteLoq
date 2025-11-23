@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using ViteLoq.Application.DTOs.UserManagement;
+using ViteLoq.Domain.Entities;
 
 namespace ViteLoq.Application.Interfaces.UserManagement
 {

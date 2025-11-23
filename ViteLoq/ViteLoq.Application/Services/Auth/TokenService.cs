@@ -40,6 +40,7 @@ public class TokenService : ITokenService
         var token = tokenHandler.CreateToken(tokenDescriptor);
         return tokenHandler.WriteToken(token);
     }
+    
 
     public (string token, DateTime expiresAt) GenerateRefreshToken()
     {
